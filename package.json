@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prebenchmark": "rimraf .tmp",
+    "prebenchmark": "./node_modules/.bin/rimraf .tmp",
     "benchmark": "node index",
     "benchmark3": "pnpm run benchmark && pnpm run benchmark && pnpm run benchmark",
     "lint": "standard index.js lib/**"
